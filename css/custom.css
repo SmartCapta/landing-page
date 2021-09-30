@@ -163,4 +163,8 @@ button {
     #banner h1 {
         font-size: 3.6rem;
     }
+
+    .img-fd {
+        margin-bottom: 50px;
+    }
 }
