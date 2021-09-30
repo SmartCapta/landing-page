@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: unset;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.container img {
+    margin-bottom: 100px;
+    border: 2px solid orange;
+    border-radius: 2px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header {
+    font-weight: bolder;
+    color: #F4762D;
+    margin-bottom: 10px;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.personal-info input {
+    margin-bottom: 20px;
+}
+
+.immobile-info input {
+    margin-bottom: 20px;
+}
+
+.immobile-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 50px;
+}
+
+.lgpd-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.lgpd-check input{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.submit  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    background: #F4762D;
+    color: white;
+
+    width: 30%;
+    height: 20%;
+    margin-left: 50px;
+    transition: 0.5s;
+}
+
+.submit:hover {
+    box-shadow: 2px 2px black;
+    color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        height: unset;
+        padding: 50px;
+        float: left;
+    }
+
+    .container img {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    .personal-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    .immobile-info {
+        width: 100%;
+        margin: 0;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form div {
+        margin-bottom: 20px;
+    }
+
+    .submit  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: none;
+        background: #F4762D;
+        color: white;
+    
+        margin-left: unset;
+        margin-top: 20px;
+        width: 80%;
+        height: 50%;
+        transition: 0.5s;
+    }
+}
