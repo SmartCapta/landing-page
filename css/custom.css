@@ -158,6 +158,12 @@ button {
     color: #ffffff;
 }
 
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /********** RWD **********/
 @media (max-width: 575px) {
     #banner h1 {
