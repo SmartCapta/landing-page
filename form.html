@@ -1,58 +1,158 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/form.css">
-    <title>Smartcapta</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/form.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Cadastrar imóvel</title>
   </head>
+
   <body>
-    <div class="container">
-      <img src="./img/logo.png" alt="logo">
+    <div class="container col m12" id="root">
+      <div class="row center-align">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <div class="row">
+        <form action="https://formspree.io/f/xjvlvozo" method="POST" class="col s12" id="lead-form">
+          <div class="row">
+            <div class="col m6 s12 center-align">
+                <span class="title">Olá, prazer em te conhecer! Nos fale mais sobre você.</span>
 
-      <form action="" method="POST">
-        <div class="personal-info">
-          <span class="section-header">Olá! Prazer em te conhecer</span>
+                <div class="input-field col s12">
+                  <label for="fullname">Seu nome completo</label>
+                  <input type="text" name="fullname" id="fullname" class="validate" required/>
+                </div>
 
-          <label for="name">Seu nome completo</label>
-          <input class="form-control" type="text" name="name">
+                <div class="input-field col s12">
+                  <label for="email">Seu melhor e-mail</label>
+                  <input type="email" name="email" id="email" class="validate" required/>
+                </div>
 
-          <label for="email">Seu melhor e-mail</label>
-          <input class="form-control" type="email" name="email">
+                <div class="input-field col s12">
+                  <label for="tel_number">
+                    Seu melhor número de telefone
+                  </label>
+                  <input type="tel" name="tel_number" id="tel_number" class="validate" required/>
+                </div>
+                
+                <p class="left-align">
+                  <label>
+                    <input type="checkbox" class="filled-in" name="lgpd_accept" required/>
+                    <span>Aceito receber e-mails, mensagens e/ou telefonemas da SmartCapta e de seus afiliados</span>
+                  </label>
+                </p>
+            </div>
 
-          <label for="tel">Seu melhor telefone (de preferência, com Whatsapp disponível)</label>
-          <input class="form-control" type="tel" name="tel">
+            <div class="col m6 s12 center-align">
+              <span style="margin-top: 100px;" class="title">Agora, nos deixe saber um pouco sobre o seu imóvel.</span>
 
-          <div class="lgpd-check">
-            <input type="checkbox" name="lgpd_accept">
-            <label for="lgpd_accept">Aceito receber e-mails, mensagens e/ou telefonemas de corretores vinculados à SmartCapta</label>
+              <div class="input-field col m6 s12">
+                <select name="state" id="state"></select>
+              </div>
+
+              <div class="input-field col m6 s12">
+                <label for="city">Município</label>
+                <input type="text" name="city" id="city" class="validate" required/>
+              </div>
+
+              <div class="input-field col m4 s12">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" class="validate" required/>
+              </div>
+
+              <div class="input-field col m6 s12">
+                <label for="street">Rua</label>
+                <input type="text" name="street" id="street" class="validate" required/>
+              </div>
+              
+              <div class="input-field col m2 s12">
+                <label for="address_number">Número</label>
+                <input type="text" name="address_number" id="address_number" class="validate" required/> 
+              </div>
+              
+              
+              <div class="input-field col s12">
+                <label for="complement">Complemento</label>
+                <input type="text" name="complement" id="complement" class="validate"/>
+              </div>
+
+              <div class="input-field col m4 s6">
+                <label for="number_of_rooms">Quartos</label>
+                <input type="number" name="number_of_rooms" id="number_of_rooms" class="validate" required/> 
+              </div>
+
+              <div class="input-field col m4 s6">
+                <label for="number_of_bathrooms">Banheiros</label>
+                <input type="number" name="number_of_bathrooms" id="number_of_bathrooms" class="validate" required/> 
+              </div>
+
+              <div class="input-field col m4 s12">
+                <label for="number_of_parking">Vagas de garagem</label>
+                <input type="number" name="number_of_parking" id="number_of_parking" class="validate" required/> 
+              </div>
+
+              <div class="input-field col s12">
+                <label for="area_m2">Área do imóvel (em metros quadrados)</label>
+                <input type="number" name="area_m2" id="area_m2" class="validate" required/> 
+              </div>
+
+              <div class="row">
+                <div class="col s4"></div>
+                <button class="btn waves-effect waves-light col s4" type="submit" name="action">Enviar</button>
+                <div class="col s4"></div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="immobile-info">
-          <span class="section-header">Nos fale sobre o seu imóvel</span>
-
-          <label for="city">Cidade</label>
-          <input class="form-control" type="text" name="city">
-
-          <label for="cep">CEP</label>
-          <input class="form-control" type="text" name="cep">
-
-          <label for="street">Rua</label>
-          <input class="form-control" type="text" name="street">
-
-          <label for="number">Número</label>
-          <input class="form-control" type="text" name="number">
-
-          <label for="complement">Complemento</label>
-          <input class="form-control" type="text" name="complement">
-        </div>
-
-        <input class="form-control submit" type="submit" value="Cadastrar imóvel">
-      </form>
+        </form>
+      </div>
     </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script> 
+      M.AutoInit();
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems);
+      });
+
+      const selectStates = document.querySelector('#state')
+      const selectCities = document.querySelector('#city')
+
+      function populateStateSelect() {
+        fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/')
+        .then(res => res.json())
+        .then(states => {
+
+          states.sort((a, b) => {
+              var textA = a.nome.toUpperCase();
+              var textB = b.nome.toUpperCase();
+              return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+          });          
+          
+          states.map(state => {
+            const option = document.createElement('option')
+
+            option.setAttribute('value', state.sigla)
+            option.textContent = state.nome
+
+            selectStates.appendChild(option)
+
+            let elems = document.querySelectorAll('select')
+            let instances = M.FormSelect.init(elems)
+          })
+        })
+      }
+      populateStateSelect()
+
+    </script>
   </body>
 </html>
+      
