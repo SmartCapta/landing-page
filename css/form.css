@@ -6,11 +6,12 @@
 img {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border: 1px solid orange
+  border: 1px solid #271801;
+  width: 50%;
 }
 
 .title {
-  color: orange;
+  color: #271801;
   font-weight: bolder;
   margin-bottom: 10rem;
 }

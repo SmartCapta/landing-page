@@ -1,176 +1,176 @@
 /********** common setting **********/
 h2 {
-    font-size: 2.8rem !important;
-    font-weight: 700;
+  font-size: 2.8rem !important;
+  font-weight: 700;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 a,
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .jumbotron {
-    margin-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .atlas-cta {
-    border-radius: 22px !important;
-    padding: 12px 30px !important;
-    font-weight: 700;
-    transition: .3s ease-in-out !important;
+  border-radius: 22px !important;
+  padding: 12px 30px !important;
+  font-weight: 700;
+  transition: 0.3s ease-in-out !important;
 }
 
 .atlas-cta:hover {
-    text-decoration: none;
-    transform: translateY(-5px);
+  text-decoration: none;
+  transform: translateY(-5px);
 }
 
 .atlas-cta-wide {
-    width: 100%;
+  width: 100%;
 }
 
 .cta-green {
-    background: #FBB76B;
-    color: #192440;
+  background: #f7bf50;
+  color: #192440;
 }
 
 .cta-green:hover {
-    color: #ffffff;
-    background: #FBB76B;
+  color: #ffffff;
+  background: #f7bf50;
 }
 
 .cta-blue {
-    background: #192440;
-    color: #ffffff;
+  background: #192440;
+  color: #ffffff;
 }
 
 .cta-blue:hover {
-    color: #ffffff;
-    background: #121a2e;
+  color: #ffffff;
+  background: #121a2e;
 }
 
 .cta-ghost {
-    border: 2px solid #192440 !important;
-    color: #192440;
+  border: 2px solid #192440 !important;
+  color: #192440;
 }
 
 .cta-ghost:hover {
-    color: #ffffff;
-    background: #121a2e;
+  color: #ffffff;
+  background: #121a2e;
 }
 
 #banner {
-    background-size: cover;
+  background-size: cover;
 }
 
 /********** banner **********/
 #banner header {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 #banner header img {
-    max-width: 500px;
+  max-width: 300px;
 }
 
 .img-fd svg {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /********** feature (skew background) **********/
 .feature img {
-    width: 100%;
-    max-width: 480px;
+  width: 100%;
+  max-width: 480px;
 }
 
 #feature-first {
-    background: linear-gradient(168deg, #ffffff 55%, #FBB76B 0);
+  background: linear-gradient(168deg, #ffffff 55%, #fbb76b 0);
 }
 
 #feature-last {
-    background: #FBB76B;
+  background: #f7bf50;
 }
 
 /********** price table **********/
 #price-table {
-    padding-top: 4rem !important;
-    padding-bottom: 4rem !important;
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
 }
 
 #price-table__premium {
-    background: #192440;
-    color: #ffffff;
+  background: #192440;
+  color: #ffffff;
 }
 
 #price-table ul li {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 /********** contact **********/
 #contact {
-    background-size: cover;
+  background-size: cover;
 }
 
 #contact ul li {
-    padding: 3px 0;
+  padding: 3px 0;
 }
 
 #contact form {
-    color: #FBB76B;
+  color: #f7bf50;
 }
 
 #contact form input,
 #contact form textarea {
-    background: transparent;
-    border: 1px solid #FBB76B;
-    color: #ffffff;
+  background: transparent;
+  border: 1px solid #f7bf50;
+  color: #ffffff;
 }
 
 /********** copyright **********/
 #copyright {
-    background: #192440;
-    padding: 2rem 3rem;
+  background: #192440;
+  padding: 2rem 3rem;
 }
 
 #copyright #social-media a {
-    width: 40px;
-    height: 40px;
-    border-radius: 99%;
-    background: #ffffff;
-    transition: .4s ease;
+  width: 40px;
+  height: 40px;
+  border-radius: 99%;
+  background: #ffffff;
+  transition: 0.4s ease;
 }
 
 #copyright #social-media a i {
-    color: #192440;
-    font-size: 1.2rem;
-    line-height: 40px;
+  color: #192440;
+  font-size: 1.2rem;
+  line-height: 40px;
 }
 
 #copyright #social-media a:hover {
-    background: #FBB76B;
+  background: #f7bf50;
 }
 
 #copyright #social-media a:hover i {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .testimonial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /********** RWD **********/
 @media (max-width: 575px) {
-    #banner h1 {
-        font-size: 3.6rem;
-    }
+  #banner h1 {
+    font-size: 3.6rem;
+  }
 
-    .img-fd {
-        margin-bottom: 50px;
-    }
+  .img-fd {
+    margin-bottom: 50px;
+  }
 }

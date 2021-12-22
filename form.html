@@ -1,70 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/form.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/form.css" />
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Cadastrar imóvel</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215817846-1">
-    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-215817846-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-215817846-1');
+      gtag("config", "UA-215817846-1");
     </script>
   </head>
 
   <body>
     <div class="container col m12" id="root">
       <div class="row center-align">
-        <img src="./img/logo.png" alt="logo">
+        <img src="./img/logo2.png" alt="logo" />
       </div>
       <div class="row">
-        <form action="https://formspree.io/f/xjvlvozo" method="POST" class="col s12" id="lead-form">
+        <form
+          action="https://formspree.io/f/xjvlvozo"
+          method="POST"
+          class="col s12"
+          id="lead-form"
+        >
           <div class="row">
             <div class="col m6 s12 center-align">
-                <span class="title">Olá, prazer em te conhecer! Nos fale mais sobre você.</span>
+              <span class="title"
+                >Olá, prazer em te conhecer! Nos fale mais sobre você.</span
+              >
 
-                <div class="input-field col s12">
-                  <label for="fullname">Seu nome completo</label>
-                  <input type="text" name="fullname" id="fullname" class="validate" required/>
-                </div>
+              <div class="input-field col s12">
+                <label for="fullname">Seu nome completo</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  class="validate"
+                  required
+                />
+              </div>
 
-                <div class="input-field col s12">
-                  <label for="email">Seu melhor e-mail</label>
-                  <input type="email" name="email" id="email" class="validate" required/>
-                </div>
+              <div class="input-field col s12">
+                <label for="email">Seu melhor e-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="validate"
+                  required
+                />
+              </div>
 
-                <div class="input-field col s12">
-                  <label for="tel_number">
-                    Seu melhor número de telefone
-                  </label>
-                  <input type="tel" name="tel_number" id="tel_number" class="validate" required/>
-                </div>
-                
-                <p class="left-align">
-                  <label>
-                    <input type="checkbox" class="filled-in" name="lgpd_accept" required/>
-                    <span>Aceito receber e-mails, mensagens e/ou telefonemas da SmartCapta e de seus afiliados</span>
-                  </label>
+              <div class="input-field col s12">
+                <label for="tel_number"> Seu melhor número de telefone </label>
+                <input
+                  type="tel"
+                  name="tel_number"
+                  id="tel_number"
+                  class="validate"
+                  required
+                />
+              </div>
 
-                  <a href="https://policies.google.com/technologies/partner-sites">Como o Google usa informações de sites ou apps que utilizam os serviços da empresa</a>
-                </p>
+              <p class="left-align">
+                <label>
+                  <input
+                    type="checkbox"
+                    class="filled-in"
+                    name="lgpd_accept"
+                    required
+                  />
+                  <span
+                    >Aceito receber e-mails, mensagens e/ou telefonemas da
+                    SmartCapta e de seus parceiros autorizados.</span
+                  >
+                </label>
+              </p>
+
+              <p class="left-align" style="margin-top: 2rem;">
+                <a
+                  class="left-align"
+                  href="https://policies.google.com/technologies/partner-sites"
+                  > O nosso site utiliza o Google Analytics. Saiba como o Google usa informações de sites ou apps que utilizam
+                  os serviços da empresa</a
+                >
+              </p>
+
+              <p class="left-align" style="margin-top: 2rem; margin-bottom: 2rem;">
+                <a
+                  class="left-align"
+                  href="./politica_privacidade.pdf"
+                  > Saiba como a SmartCapta usa os seus dados</a
+                >
+              </p>
             </div>
 
             <div class="col m6 s12 center-align">
-              <span style="margin-top: 100px;" class="title">Agora, nos deixe saber um pouco sobre o seu imóvel.</span>
+              <span style="margin-top: 100px" class="title"
+                >Agora, nos deixe saber um pouco sobre o seu imóvel.</span
+              >
 
               <div class="input-field col m6 s12">
                 <select name="state" id="state"></select>
@@ -72,53 +127,113 @@
 
               <div class="input-field col m6 s12">
                 <label for="city">Município</label>
-                <input type="text" name="city" id="city" class="validate" required/>
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  class="validate"
+                  required
+                />
               </div>
 
               <div class="input-field col m4 s12">
                 <label for="cep">CEP</label>
-                <input type="text" name="cep" id="cep" class="validate" required/>
+                <input
+                  type="text"
+                  name="cep"
+                  id="cep"
+                  class="validate"
+                  required
+                />
               </div>
 
               <div class="input-field col m6 s12">
                 <label for="street">Rua</label>
-                <input type="text" name="street" id="street" class="validate" required/>
+                <input
+                  type="text"
+                  name="street"
+                  id="street"
+                  class="validate"
+                  required
+                />
               </div>
-              
+
               <div class="input-field col m2 s12">
                 <label for="address_number">Número</label>
-                <input type="text" name="address_number" id="address_number" class="validate" required/> 
+                <input
+                  type="text"
+                  name="address_number"
+                  id="address_number"
+                  class="validate"
+                  required
+                />
               </div>
-              
-              
+
               <div class="input-field col s12">
                 <label for="complement">Complemento</label>
-                <input type="text" name="complement" id="complement" class="validate"/>
+                <input
+                  type="text"
+                  name="complement"
+                  id="complement"
+                  class="validate"
+                />
               </div>
 
               <div class="input-field col m4 s6">
                 <label for="number_of_rooms">Quartos</label>
-                <input type="number" name="number_of_rooms" id="number_of_rooms" class="validate" required/> 
+                <input
+                  type="number"
+                  name="number_of_rooms"
+                  id="number_of_rooms"
+                  class="validate"
+                  required
+                />
               </div>
 
               <div class="input-field col m4 s6">
                 <label for="number_of_bathrooms">Banheiros</label>
-                <input type="number" name="number_of_bathrooms" id="number_of_bathrooms" class="validate" required/> 
+                <input
+                  type="number"
+                  name="number_of_bathrooms"
+                  id="number_of_bathrooms"
+                  class="validate"
+                  required
+                />
               </div>
 
               <div class="input-field col m4 s12">
                 <label for="number_of_parking">Vagas de garagem</label>
-                <input type="number" name="number_of_parking" id="number_of_parking" class="validate" required/> 
+                <input
+                  type="number"
+                  name="number_of_parking"
+                  id="number_of_parking"
+                  class="validate"
+                  required
+                />
               </div>
 
               <div class="input-field col s12">
-                <label for="area_m2">Área do imóvel (em metros quadrados)</label>
-                <input type="number" name="area_m2" id="area_m2" class="validate" required/> 
+                <label for="area_m2"
+                  >Área do imóvel (em metros quadrados)</label
+                >
+                <input
+                  type="number"
+                  name="area_m2"
+                  id="area_m2"
+                  class="validate"
+                  required
+                />
               </div>
 
               <div class="row">
                 <div class="col s4"></div>
-                <button class="btn waves-effect waves-light col s4" type="submit" name="action">Enviar</button>
+                <button
+                  class="btn waves-effect waves-light col s4"
+                  type="submit"
+                  name="action"
+                >
+                  Enviar
+                </button>
                 <div class="col s4"></div>
               </div>
             </div>
@@ -126,46 +241,43 @@
         </form>
       </div>
     </div>
-    <!--JavaScript at end of body for optimized loading-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script> 
+    <script>
       M.AutoInit();
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('select');
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll("select");
         var instances = M.FormSelect.init(elems);
       });
 
-      const selectStates = document.querySelector('#state')
-      const selectCities = document.querySelector('#city')
+      const selectStates = document.querySelector("#state");
+      const selectCities = document.querySelector("#city");
 
       function populateStateSelect() {
-        fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/')
-        .then(res => res.json())
-        .then(states => {
-
-          states.sort((a, b) => {
+        fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados/")
+          .then((res) => res.json())
+          .then((states) => {
+            states.sort((a, b) => {
               var textA = a.nome.toUpperCase();
               var textB = b.nome.toUpperCase();
-              return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-          });          
-          
-          states.map(state => {
-            const option = document.createElement('option')
+              return textA < textB ? -1 : textA > textB ? 1 : 0;
+            });
 
-            option.setAttribute('value', state.sigla)
-            option.textContent = state.nome
+            states.map((state) => {
+              const option = document.createElement("option");
 
-            selectStates.appendChild(option)
+              option.setAttribute("value", state.sigla);
+              option.textContent = state.nome;
 
-            let elems = document.querySelectorAll('select')
-            let instances = M.FormSelect.init(elems)
-          })
-        })
+              selectStates.appendChild(option);
+
+              let elems = document.querySelectorAll("select");
+              let instances = M.FormSelect.init(elems);
+            });
+          });
       }
-      populateStateSelect()
-
+      populateStateSelect();
     </script>
   </body>
 </html>
-      
