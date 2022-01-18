@@ -4,11 +4,6 @@ h2 {
   font-weight: 700;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
 a,
 button {
   cursor: pointer;
@@ -35,13 +30,13 @@ button {
 }
 
 .cta-green {
-  background: #f7bf50;
-  color: #192440;
+  background: #FF7B66;
+  color: #ffffff;
 }
 
 .cta-green:hover {
-  color: #ffffff;
-  background: #f7bf50;
+  color: #3333CC;
+  background: #FF7B66;
 }
 
 .cta-blue {
@@ -84,7 +79,6 @@ button {
 /********** feature (skew background) **********/
 .feature img {
   width: 100%;
-  max-width: 480px;
 }
 
 #feature-first {
@@ -132,7 +126,7 @@ button {
 
 /********** copyright **********/
 #copyright {
-  background: #192440;
+  background: #4338C3;
   padding: 2rem 3rem;
 }
 
@@ -145,13 +139,13 @@ button {
 }
 
 #copyright #social-media a i {
-  color: #192440;
+  color: #4338C3;
   font-size: 1.2rem;
   line-height: 40px;
 }
 
 #copyright #social-media a:hover {
-  background: #f7bf50;
+  background: #FF7B66;
 }
 
 #copyright #social-media a:hover i {
@@ -172,5 +166,11 @@ button {
 
   .img-fd {
     margin-bottom: 50px;
+  }
+
+  #banner header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
